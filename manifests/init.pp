@@ -8,9 +8,9 @@ class timezone($zone='UTC') {
   }
 
   exec { 'reconfigure-tzdata':
-    command => 'dpkg-reconfigure -f noninteractive tzdata',
-    subscribe => File['/etc/timezone'],
-    require => File['/etc/timezone'],
+    command     => 'dpkg-reconfigure -f noninteractive tzdata',
+    subscribe   => File['/etc/timezone'],
+    require     => File['/etc/timezone'],
     refreshonly => true,
   }
 }
