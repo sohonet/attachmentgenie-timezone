@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/attachmentgenie/puppet-module-timezone.png)](http://travis-ci.org/attachmentgenie/puppet-module-timezone)
+
 Puppet Timezone Module
 ======================
 
