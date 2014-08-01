@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/attachmentgenie/puppet-module-timezone.png)](http://travis-ci.org/attachmentgenie/puppet-module-timezone)
+[![Build Status](https://secure.travis-ci.org/attachmentgenie/attachmentgenie-timezone.png)](http://travis-ci.org/attachmentgenie/attachmentgenie-timezone)
 
 Puppet Timezone Module
 ======================
@@ -14,7 +14,7 @@ Installation
 
 Clone this repo to a timezone directory under your Puppet modules directory:
 
-    git clone git://github.com/uggedal/puppet-module-timezone.git timezone
+    git clone git://github.com/uggedal/attachmentgenie-timezone.git timezone
 
 If you don't have a Puppet Master you can create a manifest file
 based on the notes below and run Puppet in stand-alone mode
