@@ -1,0 +1,14 @@
+{
+  "name": "attachmentgenie-timezone",
+  "version": "1.1.0",
+  "author": "Eivind Uggedal <eivind@uggedal.com>",
+  "summary": "Puppet timezone Module",
+  "license": "MIT License",
+  "source": "git://github.com/attachmentgenie/puppet-module-timezone.git",
+  "project_page": "https://github.com/attachmentgenie/puppet-module-timezone",
+  "issues_url": "https://github.com/attachmentgenie/puppet-module-timezone/issues",
+  "description": "Module for configuring timezone.",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">=2.2.1"}
+  ]
+}
