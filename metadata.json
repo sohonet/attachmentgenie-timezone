@@ -1,14 +1,84 @@
 {
   "name": "attachmentgenie-timezone",
   "version": "1.1.0",
-  "author": "Eivind Uggedal <eivind@uggedal.com>",
+  "author": "Bram Vogelaar <bram@attachmentgenie.com>",
   "summary": "Puppet timezone Module",
-  "license": "MIT License",
-  "source": "git://github.com/attachmentgenie/attachmentgenie-timezone.git",
+  "license": "MIT",
+  "source": "https://github.com/attachmentgenie/attachmentgenie-timezone",
   "project_page": "https://github.com/attachmentgenie/attachmentgenie-timezone",
   "issues_url": "https://github.com/attachmentgenie/attachmentgenie-timezone/issues",
   "description": "Module for configuring timezone.",
+  "tags": [
+    "timezone",
+    "tzdata",
+    "localtime"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6.0",
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "7.0",
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "10.10",
+        "11.04",
+        "11.10",
+        "12.04",
+        "12.10",
+        "13.04",
+        "13.10",
+        "14.04",
+        "14.10"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6.0",
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6.0",
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5"
+      ]
+    }
+  ],
   "dependencies": [
-    {"name":"puppetlabs/stdlib","version_requirement":">=2.2.1"}
+    {"name":"puppetlabs/stdlib","version_requirement":">=2.2.1 <5.0.0" }
   ]
 }

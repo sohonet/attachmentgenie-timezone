@@ -1,4 +1,6 @@
-class timezone($zone='UTC') {
+class timezone(
+  $zone='UTC',
+) {
   package { 'tzdata':
     ensure => present,
   }
@@ -19,7 +21,7 @@ class timezone($zone='UTC') {
     'redhat': {
       file { '/etc/localtime':
         ensure  => 'present',
-        target  => "/usr/share/zoneinfo/$zone",
+        target  => "/usr/share/zoneinfo/${zone}",
         require => Package['tzdata'],
       }
     }
