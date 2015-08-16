@@ -9,11 +9,15 @@ group :development, :unit_tests do
   gem 'simplecov',               :require => false
   gem 'puppet_facts',            :require => false
   gem 'json',                    :require => false
+  gem 'metadata-json-lint',      :require => false
 end
 
 group :system_tests do
-  gem 'beaker-rspec',  :require => false
-  gem 'serverspec',    :require => false
+  gem 'beaker-rspec',                 :require => false
+  gem 'beaker-puppet_install_helper', :require => false
+  gem 'guard',                        :require => false
+  gem 'guard-rake',                   :require => false
+  gem 'serverspec',                   :require => false
 end
 
 if facterversion = ENV['FACTER_GEM_VERSION']

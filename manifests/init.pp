@@ -17,7 +17,7 @@ class timezone(
       file { '/etc/localtime':
         ensure  => 'present',
         target  => "/usr/share/zoneinfo/${zone}",
-        require => Package["$tzdata_package_name"],
+        require => Package[$tzdata_package_name],
       }
     }
     'gentoo': {
@@ -33,13 +33,13 @@ class timezone(
       fail("Unsupported osfamily ${::osfamily}")
     }
   }
-  package { "$tzdata_package_name":
+  package { $tzdata_package_name:
     ensure => $ensure,
   }
 
   file { '/etc/timezone':
     content => inline_template('<%= @zone + "\n" %>'),
-    require => Package["$tzdata_package_name"],
+    require => Package[$tzdata_package_name],
   }
 
 }

@@ -76,9 +76,9 @@
         "6.4",
         "6.5"
       ]
-    }
+    },
     {
-      "operatingsystem": "gentoo",
+      "operatingsystem": "gentoo"
     }
   ],
   "dependencies": [
