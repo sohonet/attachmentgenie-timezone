@@ -77,6 +77,9 @@
         "6.5"
       ]
     }
+    {
+      "operatingsystem": "gentoo",
+    }
   ],
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">=2.2.1 <5.0.0" }
