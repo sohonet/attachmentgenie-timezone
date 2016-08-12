@@ -1,5 +1,5 @@
 class timezone(
-  $zone='UTC',
+  $zone='Etc/UTC',
   $ensure='present',
 ) {
   case $::osfamily {
